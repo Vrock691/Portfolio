@@ -1,0 +1,18 @@
+@keyframes slidein {
+    from {
+        filter: opacity(0%);
+    }
+    to {
+        filter: opacity(100%);
+    }
+}
+
+header {
+    filter: opacity(0);
+    animation: slidein 1s both;
+}
+
+nav a {
+    filter: opacity(0);
+    animation: slidein 1s 200ms both;
+}
