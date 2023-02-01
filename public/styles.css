@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: #3C2A21;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -11,202 +12,55 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: black;
-}
-
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 5% 0 5%;
+    background-color: #E5E5CB;
 }
 
 header {
-    text-align: center;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav {
-    width: 100%;
+header img {
+    width: 200px;
+}
+
+header .right,
+header .left,
+header .middle {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    margin-top: 80px;
+    flex: 1;
 }
 
-nav a {
-    list-style: none;
+header .right a {
+    margin-right: 20px;
+}
+
+#contact {
+    color: white;
+    padding: 10px 20px;
+    background-color: #3C2A21;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
-    font-size: x-large;
-}
-
-img {
-    font-size: xx-large;
-    max-width: 500px;
-    max-height: 500px;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 5em;
-    margin: 40px;
-    margin-bottom: 0;
-}
-
-.colored {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-#aboutme h2 {
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-}
-
-#aboutme .big,
-#myprojects .big,
-#contact .big {
-    color: white;
-    font-size: xx-large;
-    margin: 40px;
-    width: 70%;
-}
-
-#myprojects .small {
-    color: white;
-    margin: 40px;
-    margin-top: 0;
-}
-
-#myprojects h2 {
-    background-color: #f27f3e;
-    background-image: linear-gradient(45deg, #f27f3e 0%, #ffd164 100%);
-}
-
-#myprojects .wrapper {
-    display: grid;
-    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
-    grid-auto-flow: row dense;
-    gap: 100px;
-    margin: 40px;
-}
-
-.card p {
-    padding: 0;
-    margin: 0;
-}
-
-.card .icon {
-    width: 60px;
-    height: auto;
-    overflow: hidden;
-    border-radius: 100%;
-}
-
-.card .title {
-    font-size: xx-large;
-    margin-top: 10px;
-}
-
-.card .desc {
-    font-size: large;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.card .link {
-    color: grey;
-}
-
-#manotesur20 .title {
-    color: #90ee90;
-}
-
-#pluméo .title {
-    color: rgb(255, 239, 0);
-}
-
-#pourcentage .title {
-    color: #FFCC00;
-}
-
-#spodeesync .icon {
-    background-color: #32DE84;
-}
-
-#spodeesync .title {
-    color: #32DE84;
-}
-
-#contact h2 {
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-}
-
-ul {
-    list-style: none;
-    margin: 0 40px;
-}
-
-li {
     font-size: large;
 }
 
-@media (max-width: 1200px) {
-    #myprojects .wrapper {
-        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
-    }
+#contact:hover {
+    box-shadow: #3C2A21 2px 2px;
 }
 
-@media (max-width: 700px) {
-    img {
-        max-width: 70%;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    nav a {
-        font-size: large;
-    }
-    h2 {
-        font-size: xx-large;
-        margin: 10px 20px 0 20px;
-    }
-    #aboutme .big,
-    #myprojects .big,
-    #contact .big {
-        color: white;
-        font-size: x-large;
-        margin: 20px;
-        margin-top: 20px;
-        width: auto;
-    }
-    #myprojects .wrapper {
-        display: grid;
-        grid: 1fr / 1fr;
-        gap: 20px;
-        margin: 20px;
-    }
-    .card {
-        padding: 0;
-        background-color: transparent;
-        margin-bottom: 20px;
-    }
-    ul {
-        margin: 0 20px;
-    }
-    #myprojects .small {
-        margin: 0 20px 20px 20px;
-    }
+nav {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    gap: 25px;
+    background-color: #D5CEA3;
+    padding: 20px;
 }
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 700px) {}
