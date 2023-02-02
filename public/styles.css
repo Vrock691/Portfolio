@@ -34,6 +34,14 @@ header .middle {
     flex: 1;
 }
 
+header .right {
+    justify-content: right;
+}
+
+header .left {
+    justify-content: left;
+}
+
 header .right a {
     margin-right: 20px;
 }
@@ -59,6 +67,20 @@ nav {
     gap: 25px;
     background-color: #D5CEA3;
     padding: 20px;
+    font-size: larger;
+}
+
+#top  {
+    padding: 80px;
+    font-size: 4em;
+}
+
+.balise {
+    color: #1A120B;
+}
+
+section {
+    margin-bottom: 60px;
 }
 
 @media (max-width: 1200px) {}
