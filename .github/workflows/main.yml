@@ -1,34 +1,20 @@
-name: deploy_website
-run-name: ${{ github.actor }} is deploying the site
+name: Deploy to Preview Channel
+
 on:
   pull_request:
-    branches:
-      - master
+    # Optionally configure to run only for specific files. For example:
+    paths:
+    - "master/**"
+
 jobs:
-    my_job:
-      name: deploy
-      runs-on: ubuntu-latest
-      steps: 
-        - name: Setup Node
-          uses: actions/setup-node@v1
-          with:
-            node-version: '10.x'
-        - name: Install Dependencies
-          run: npm install
-        - name: Deploy to Firebase Hosting
-          uses: FirebaseExtended/action-hosting-deploy@v0.6-alpha
-          with:
-            repoToken: # optional
-    # Firebase service account JSON
-    firebaseServiceAccount: 
-    # How long should a preview live? See the preview channels docs for options
-    expires: # optional, default is 7d
-    # The project to deploy to. If you leave this blank, make sure you check in a .firebaserc file
-    projectId: # optional
-    # The ID of the channel to deploy to. If you leave this blank, a preview channel and its ID will be auto-generated per branch or PR.
-    channelId: # optional
-    # The target name of the Hosting site to deploy to. If you leave this blank, the default target or all targets defined in the .firebaserc will be deployed to. Refer to the Hosting docs about [multiple sites](https://firebase.google.com/docs/hosting/multisites) for more information about deploy targets.
-    target: # optional
-    # The location of your firebase.json file, relative to the root of your directory
-    entryPoint: # optional, default is .
-        
+  build_and_preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Add any build steps here. For example:
+      # - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: vrock691
