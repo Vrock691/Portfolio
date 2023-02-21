@@ -65,13 +65,21 @@ nav {
     display: flex;
     justify-content: center;
     gap: 25px;
-    background-color: #D5CEA3;
     padding: 20px;
     font-size: larger;
+    margin: 0 80px;
+    /* From https://css.glass */
+    background: rgba(213, 206, 163, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(213, 206, 163, 0.31);
 }
 
 #top {
     padding: 80px;
+    padding-bottom: 0;
     font-size: 4em;
 }
 
@@ -79,12 +87,9 @@ nav {
     color: #1A120B;
 }
 
-section {
-    margin-bottom: 60px;
-}
-
 #moreaboutme {
     padding: 80px;
+    padding-bottom: 0;
     font-size: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,12 +116,39 @@ section {
 }
 
 #seeprojects {
-    background-color: #D5CEA3;
-    border-radius: 25px;
+    /* From https://css.glass */
+    background: rgba(213, 206, 163, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(213, 206, 163, 0.31);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    padding: 0 20%;
+}
+
+#seeprojects .balise {
+    font-size: larger;
+}
+
+#seeprojects a {
+    font-size: smaller;
+}
+
+#calltoaction {
+    padding: 80px;
+    font-size: 2em;
+}
+
+#calltoaction .bottom {
+    /* From https://css.glass */
+    background: rgba(60, 42, 33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(60, 42, 33, 0.31);
+    height: 300px;
 }
 
 @media (max-width: 1200px) {}
