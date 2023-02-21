@@ -77,6 +77,21 @@ nav {
     border: 1px solid rgba(213, 206, 163, 0.31);
 }
 
+.bottomnav {
+    margin-bottom: 80px;
+    justify-content: space-between;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.bottomnav div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 #top {
     padding: 80px;
     padding-bottom: 0;
@@ -149,6 +164,13 @@ nav {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(60, 42, 33, 0.31);
     height: 300px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#calltoaction .bottom p {
+    color: rgba(213, 206, 163, 1)
 }
 
 @media (max-width: 1200px) {}
