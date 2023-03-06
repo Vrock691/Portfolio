@@ -301,7 +301,7 @@ nav {
     }
 
     header {
-        padding: 40px 40px 0 40px;
+        padding: 40px 20px 0 20px;
     }
 
     header .left,
@@ -322,13 +322,13 @@ nav {
         box-shadow: none;
         font-size: larger;
         align-items: flex-start;
-        padding: 40px;
+        padding: 40px 20px;
         padding-bottom: 0;
     }
 
     #top, #top_titleonly {
         font-size: 2em;
-        padding: 40px;
+        padding: 20px;
         height: 60%;
     }
 
@@ -339,7 +339,7 @@ nav {
     #moreaboutme {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: minmax(auto, auto);
-        padding: 40px;
+        padding: 20px;
         padding-top: 0;
     }
 
@@ -348,8 +348,9 @@ nav {
     }
 
     #calltoaction .bottom {
-        padding: 40px;
+        padding: 40px 20px;
         border-radius: 0;
+        font-size: 0.7em;
     }
 
     #seeprojects {
@@ -372,7 +373,7 @@ nav {
 
     .bottomnav div {
         justify-content: center;
-        margin: 0 40px;
+        margin: 0 20px;
         text-align: left;
     }
 
