@@ -387,5 +387,6 @@ nav {
         border-radius: 0;
         height: 100%;
         box-shadow: none;
+        padding: 40px 20px;
     }
 }
