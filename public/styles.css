@@ -174,15 +174,125 @@ nav {
     color: rgba(213, 206, 163, 1)
 }
 
-@media (max-width: 1200px) {
+.projects {
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(300px, auto);
+    gap: 40px;
+}
+
+.projects .project {
+    padding: 40px;
+    /* From https://css.glass */
+    background: rgba(213, 206, 163, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(213, 206, 163, 0.31);
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.projects .project .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projects .project .title img {
+    height: 60px;
+    border-radius: 15px;
+    border: 3px #3c2a21 solid;
+    align-self: baseline;
+}
+
+.projects .project .title p {
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+.projects .project .button {
+    height: fit-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+#edt_iut_périgueux {
+    /* From https://css.glass */
+    background: #673bb7;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #673bb7;
+}
+
+#edt_iut_périgueux p,
+#edt_iut_périgueux a,
+#spotifysync p,
+#spotifysync a,
+#plumeo p,
+#plumeo a {
+    color: white;
+}
+
+#edt_iut_périgueux img,
+#spotifysync img,
+#plumeo img {
+    border-color: white;
+}
+
+#pourcentage {
+    /* From https://css.glass */
+    background: rgb(255, 204, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(255, 204, 0);
+}
+
+#spotifysync {
+    /* From https://css.glass */
+    background: #52b960;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #52b960;
+}
+
+#plumeo {
+    /* From https://css.glass */
+    background: rgb(33, 33, 33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(33, 33, 33);
+}
+
+#manotesurvingt {
+    /* From https://css.glass */
+    background: rgba(144, 238, 144, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(144, 238, 144, 1);
+}
+
+@media (max-width: 1400px) {
     #moreaboutme {
         grid-template-columns: repeat(2, 1fr);
         padding-top: 0;
+    }
 
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
 
     .mobilenone {
         display: none;
@@ -193,7 +303,8 @@ nav {
         padding-top: 40px;
     }
 
-    header .left, header .right {
+    header .left,
+    header .right {
         display: none;
     }
 
@@ -243,6 +354,6 @@ nav {
 
     .bottomnav * {
         justify-content: center;
-        
+
     }
 }
