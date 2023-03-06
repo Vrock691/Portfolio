@@ -93,7 +93,7 @@ nav {
     align-items: center;
 }
 
-#top {
+#top, #top_titleonly {
     padding: 80px;
     padding-bottom: 0;
     font-size: 4em;
@@ -194,6 +194,8 @@ nav {
     display: flex;
     flex-direction: column;
     min-height: 250px;
+    border-radius: 16px;
+
 }
 
 .projects .project .title {
@@ -227,7 +229,6 @@ nav {
 #edt_iut_périgueux {
     /* From https://css.glass */
     background: #673bb7;
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #673bb7;
 }
@@ -250,7 +251,6 @@ nav {
 #pourcentage {
     /* From https://css.glass */
     background: rgb(255, 204, 0);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(255, 204, 0);
 }
@@ -258,7 +258,6 @@ nav {
 #spotifysync {
     /* From https://css.glass */
     background: #52b960;
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #52b960;
 }
@@ -266,7 +265,6 @@ nav {
 #plumeo {
     /* From https://css.glass */
     background: rgb(33, 33, 33);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(33, 33, 33);
 }
@@ -274,10 +272,7 @@ nav {
 #manotesurvingt {
     /* From https://css.glass */
     background: rgba(144, 238, 144, 1);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(144, 238, 144, 1);
 }
 
@@ -294,18 +289,28 @@ nav {
 
 @media (max-width: 850px) {
 
+    html,
+    body {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
     .mobilenone {
         display: none;
     }
 
     header {
-        padding: 20px;
-        padding-top: 40px;
+        padding: 40px 40px 0 40px;
     }
 
     header .left,
     header .right {
         display: none;
+    }
+
+    header .middle {
+        justify-content: left;
     }
 
     nav {
@@ -316,11 +321,19 @@ nav {
         border: none;
         box-shadow: none;
         font-size: larger;
+        align-items: flex-start;
+        padding: 40px;
+        padding-bottom: 0;
     }
 
-    #top {
+    #top, #top_titleonly {
         font-size: 2em;
         padding: 40px;
+        height: 60%;
+    }
+
+    #top_titleonly {
+        height: max-content;
     }
 
     #moreaboutme {
@@ -350,10 +363,28 @@ nav {
 
     .bottomnav {
         padding: 0;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        background-color: rgba(213, 206, 163, 1);
+        border-radius: 0;
     }
 
-    .bottomnav * {
+    .bottomnav div {
         justify-content: center;
+        margin: 0 40px;
+        text-align: left;
+    }
 
+    .projects {
+        display: block;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .projects .project {
+        border-radius: 0;
+        height: 100%;
+        box-shadow: none;
     }
 }
