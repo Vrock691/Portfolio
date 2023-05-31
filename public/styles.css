@@ -238,14 +238,23 @@ nav {
 #spotifysync p,
 #spotifysync a,
 #plumeo p,
-#plumeo a {
+#plumeo a, 
+#vldschool p, 
+#vldschool a {
     color: white;
 }
 
 #edt_iut_périgueux img,
 #spotifysync img,
-#plumeo img {
+#plumeo img,
+#vldschool img {
     border-color: white;
+}
+
+#vldschool img {
+    height: auto;
+    width: 60px;
+    aspect-ratio: 1/1;
 }
 
 #pourcentage {
@@ -274,6 +283,12 @@ nav {
     background: rgba(144, 238, 144, 1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(144, 238, 144, 1);
+}
+
+#vldschool {
+    background: #03001C;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #03001C;
 }
 
 @media (max-width: 1400px) {
