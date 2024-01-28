@@ -66,3 +66,7 @@ node_modules/
 
 # private data
 public/projects/
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/Mon_site_perso.iml
+/.idea/vcs.xml
