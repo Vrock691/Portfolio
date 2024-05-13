@@ -240,14 +240,17 @@ nav {
 #plumeo p,
 #plumeo a, 
 #vldschool p, 
-#vldschool a {
+#vldschool a,
+#sco2 p, 
+#sco2 a {
     color: white;
 }
 
 #edt_iut_périgueux img,
 #spotifysync img,
 #plumeo img,
-#vldschool img {
+#vldschool img, 
+#sco2 img {
     border-color: white;
 }
 
@@ -289,6 +292,18 @@ nav {
     background: #03001C;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #03001C;
+}
+
+#sco2 {
+    background: #4caf50;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #4caf50;
+}
+
+#radiotalk {
+    background: rgba(246, 201, 14, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(246, 201, 14, 1);
 }
 
 @media (max-width: 1400px) {
