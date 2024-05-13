@@ -254,7 +254,7 @@ nav {
     border-color: white;
 }
 
-#vldschool img {
+#vldschool img, #sco2 img {
     height: auto;
     width: 60px;
     aspect-ratio: 1/1;
