@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Logo from "./logo";
 
 export default function Home() {
   return (
     <main>
-      <h1>Accueil</h1>
+      <Logo></Logo>
       <Link key={'Mes projets'} href={"/projects"}>
         <p>Mes projets</p>
       </Link>
