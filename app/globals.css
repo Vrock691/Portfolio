@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --text-color: #000;
-  --background-rgb: 250, 246, 240;
+  --text-color: #1A120B;
+  --selected-text-color: #D5CEA3;
+  --background-color: #E5E5CB;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #FFF;
-    --background-rgb: 15, 5, 0;
+    --background-color: #1A120B;
   }
 }
 
 body {
   color: var(--text-color);
-  background: rgb(var(--background-rgb));
+  background: var(--background-color);
 }
 
 @layer utilities {  

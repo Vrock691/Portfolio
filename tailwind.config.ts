@@ -9,12 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial": "radial-gradient(var(--background-color))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "conic-gradient(from 180deg at 50% 50%, var(--background-color))",
       },
       fontFamily: {
-        lexend: ['var(--font-lexend)']
+        "lexend": ['var(--font-lexend)'],
+      },
+      colors: {
+        "text-color": 'var(--selected-text-color)',
+        "selected-text-color": 'var(--selected-text-color)',
+        "background-color": 'var(--background-color)',
       }
     },
   },
