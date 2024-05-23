@@ -22,7 +22,9 @@ export default function RootLayout({
         <div className="w-full lg:w-2/3 md:flex m-6 md:m-12 lg:my-24 ">
           <div className="flex flex-col md:basis-1/3 items-start">
             <Logo />
-            <NavMenu/>
+            <div className="hidden md:block">
+              <NavMenu/>
+            </div>
           </div>
           <div className="md:basis-2/3">
             {children}

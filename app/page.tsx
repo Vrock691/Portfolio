@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./components/logo";
 import Card from "./components/card";
+import NavMenu from "./components/NavMenu";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <br />
         <p>Vous pourrez retrouver ici mon parcours universitaire et professionel, mes travaux, mes projets et bien d'autres choses encore.</p>
         <br />
-        <Card>coucou</Card>
+      </div>
+      <div className="md:hidden">
+        <NavMenu></NavMenu>
       </div>
     </main>
   );
