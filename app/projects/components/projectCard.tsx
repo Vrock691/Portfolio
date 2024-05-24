@@ -11,15 +11,15 @@ export default function ProjectCard({
     const [peopleVisibility, changePeopleVisibility] = useState(false);
     return (
         <div className="w-full h-max my-10 flex flex-row gap-4 md:flex-row">
-            <div className="w-12 h-12 p-2 bg-[#3C2A21] rounded flex items-center shrink-0">
-                <img src={projectData.iconPath} alt="" className="rounded" />
+            <div className="w-12 h-12 p-2 bg-[#D5CEA3] dark:bg-[#3C2A21] rounded flex items-center justify-center shrink-0">
+                <img src={projectData.iconPath} alt="" className={`rounded ${(projectData.invertLogo) ? "invert dark:invert-0" : ""}`} />
             </div>
             <div>
                 <div className="flex flex-wrap items-center gap-2">
                     <p className="font-semibold">{projectData.name}</p>
-                    {(projectData.active) ? <div className="flex items-center gap-1 border border-green-500 w-max h-max px-1 rounded-full">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <p className="text-xs text-green-500">PROJET ACTIF</p>    
+                    {(projectData.active) ? <div className="flex items-center gap-1 border border-green-700 dark:border-green-500  w-max h-max px-1 rounded-full">
+                        <div className="w-2 h-2 bg-green-700 dark:bg-green-500 rounded-full"></div>
+                        <p className="text-xs text-green-700 dark:text-green-500">PROJET ACTIF</p>    
                     </div> : null}
                 </div>
                 <p className="mt-1">{projectData.desc}</p>
@@ -29,7 +29,7 @@ export default function ProjectCard({
                     </svg>
                     {
                         projectData.languages.map((l: string) => 
-                            <div className="px-2 border rounded-full">
+                            <div className="px-2 border rounded-full border-[--text-color]">
                                 <p className="text-xs">{l}</p>
                             </div>
                         )
@@ -58,7 +58,7 @@ export default function ProjectCard({
                         </div>
                         {
                             projectData.people.map((p: any) => 
-                                <a href={p.url} className="flex items-center gap-1 px-2 border rounded-full text-xs">
+                                <a href={p.url} className="flex items-center gap-1 px-2 border border-[--text-color] rounded-full text-xs">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-3">
                                         <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Zm-5-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM8 9c-1.825 0-3.422.977-4.295 2.437A5.49 5.49 0 0 0 8 13.5a5.49 5.49 0 0 0 4.294-2.063A4.997 4.997 0 0 0 8 9Z" clip-rule="evenodd" />
                                     </svg>

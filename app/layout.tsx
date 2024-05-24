@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className} flex justify-center md:overflow-hidden`}>
-        <div className="w-full lg:w-2/3 md:flex m-6 md:my-0 md:mx-12 lg:mx-24">
-          <div className="flex flex-col md:basis-1/3 items-start scrollbar md:py-12 lg:py-24">
+        <div className="w-full lg:w-2/3 md:flex m-6 md:my-0">
+          <div className="flex flex-col md:basis-1/3 items-start scrollbar md:p-12 lg:p-24">
             <Logo />
             <div className="hidden md:block">
               <NavMenu/>
