@@ -1,0 +1,1 @@
+export const languages = ["HTML", "CSS", "JS", "Flutter", "SQL", "Python", "C", "Bash Script"]

@@ -10,6 +10,11 @@ export const availableTabs = [
         icon: "/code.svg"
     },
     {
+        path: "/skills",
+        name: "Mes compétences",
+        icon: "/skills.svg"
+    },
+    {
         path: "/job-uni",
         name: "Mon parcours",
         icon: "/book.svg"

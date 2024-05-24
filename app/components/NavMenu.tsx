@@ -11,7 +11,7 @@ export default function NavMenu() {
             <p className="text-sm font-sans mb-1">MENU</p>
             {
             availableTabs.map((element) =>             
-                <NavMenuElement path={element.path} name={element.name} icon={element.icon}></NavMenuElement>
+                <NavMenuElement key={element.name} path={element.path} name={element.name} icon={element.icon}></NavMenuElement>
             )}
         </div>
     );
@@ -38,7 +38,7 @@ export function NavMenuElement({
                 width={16}
                 height={16}
                 />
-                <p className={`flex-auto ${(selected) ? "font-bold" : ""}`}>{name}</p>
+                <p className={`flex-auto ${(selected) ? "font-bold" : "hover:font-semibold"}`}>{name}</p>
             </div>
         </Link>
     );
