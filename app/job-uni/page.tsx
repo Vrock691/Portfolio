@@ -92,7 +92,7 @@ export default function JobUni() {
                     <p className="text-sm italic">2022<br />auj.</p>
                     <div>
                         <p className="font-bold">Employé Polyvalent</p>
-                        <p>Entretient des locaux et espaces vert - Récéption - Garde d'enfants</p>
+                        <p>Entretient des locaux et espaces verts - Réception - Garde d'enfants</p>
                         <p className="text-sm font-light">Manoir de la garde - Jarnioux</p>
                     </div>
                 </li>
@@ -100,8 +100,8 @@ export default function JobUni() {
                     <p className="text-sm italic">2022</p>
                     <div>
                         <p className="font-bold">Gestionnaire Locatif Junior</p>
-                        <p>Service Clientèle Locative - Support téléphonique et mail - Dialogues entre les bailleurs, locataires et prestataires.</p>
-                        <p className="text-sm font-light">Coquillat Immobilier - Villefranche-sur-saône</p>
+                        <p>Service Clientèle Locative - Support téléphonique et email - Dialogues entre les bailleurs, locataires et prestataires.</p>
+                        <p className="text-sm font-light">Century 21 Coquillat Immobilier - Villefranche-sur-saône</p>
                     </div>
                 </li>
             </ul>
