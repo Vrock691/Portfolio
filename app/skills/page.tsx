@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { languages } from "../lib/skills";
+import { OS_software, languages, lib_framework, providers } from "../lib/skills";
 
 export default function Skills() {
   return (
@@ -16,11 +16,11 @@ export default function Skills() {
             <Image
                 src="/languages.svg"
                 alt=""
-                className="text-text-selected-color dark:invert"
+                className="dark:invert"
                 width={16}
                 height={16}
             />            
-            <h2 className="text-lg">Langages</h2>
+            <h2 className="text-lg">Langues</h2>
         </div>
         <div className="flex flex-wrap gap-4 my-2">
             <p className="border border-[--text-color] rounded-full px-3">
@@ -35,7 +35,7 @@ export default function Skills() {
             <Image
                 src="/code.svg"
                 alt=""
-                className="text-text-selected-color dark:invert"
+                className="dark:invert"
                 width={16}
                 height={16}
             />            
@@ -44,6 +44,66 @@ export default function Skills() {
         <div className="flex flex-wrap gap-4 my-2">
             {
                 languages.map((l: string) => 
+                    <p className="border border-[--text-color] rounded-full px-3">
+                        {l}
+                    </p>
+                )
+            }
+        </div>
+        <br />
+        <div className="flex gap-2 items-center mb-1">
+            <Image
+                src="/code_square.svg"
+                alt=""
+                className="dark:invert"
+                width={16}
+                height={16}
+            />            
+            <h2 className="text-lg">Librairies et Frameworks</h2>
+        </div>
+        <div className="flex flex-wrap gap-4 my-2">
+            {
+                lib_framework.map((l: string) => 
+                    <p className="border border-[--text-color] rounded-full px-3">
+                        {l}
+                    </p>
+                )
+            }
+        </div>
+        <br />
+        <div className="flex gap-2 items-center mb-1">
+            <Image
+                src="/cloud.svg"
+                alt=""
+                className="dark:invert"
+                width={16}
+                height={16}
+            />            
+            <h2 className="text-lg">Services et Cloud</h2>
+        </div>
+        <div className="flex flex-wrap gap-4 my-2">
+            {
+                providers.map((l: string) => 
+                    <p className="border border-[--text-color] rounded-full px-3">
+                        {l}
+                    </p>
+                )
+            }
+        </div>
+        <br />
+        <div className="flex gap-2 items-center mb-1">
+            <Image
+                src="/command_line.svg"
+                alt=""
+                className="dark:invert"
+                width={16}
+                height={16}
+            />            
+            <h2 className="text-lg">Outils et OS</h2>
+        </div>
+        <div className="flex flex-wrap gap-4 my-2">
+            {
+                OS_software.map((l: string) => 
                     <p className="border border-[--text-color] rounded-full px-3">
                         {l}
                     </p>
