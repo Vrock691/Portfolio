@@ -30,6 +30,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
     </html>
   );
