@@ -16,7 +16,7 @@ export default function Projects() {
         <p className='text-sm font-bold'>Retourner à l'accueil</p>
       </Link>
       <h1 className='text-xl'>Projets</h1>
-      <p>Voici une liste non-exaustive de mes derniers projets personnels.</p>
+      <p>Voici une liste de mes derniers projets personnels.</p>
       {
         projects.map((IprojectData) =>
           <ProjectCard projectData={IprojectData}></ProjectCard>

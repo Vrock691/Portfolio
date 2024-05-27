@@ -10,7 +10,7 @@ export default function Skills() {
             <p className='text-sm font-bold'>Retourner à l'accueil</p>
         </Link>
         <h1 className='text-xl'>Compétences</h1>
-        <p>Voici une liste des quelques langages et technologies que je maitrise.</p>
+        <p>Voici une liste des langages et technologies que je maitrise.</p>
         <br />
         <div className="flex gap-2 items-center mb-1">
             <Image
@@ -110,6 +110,7 @@ export default function Skills() {
                 )
             }
         </div>
+        <br />
     </div>
   );
 }

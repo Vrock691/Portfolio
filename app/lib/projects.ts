@@ -4,7 +4,7 @@ export const projects = [
         invertLogo: true,
         name: "Portfolio",
         desc: "Ce site internet.",
-        languages: ["NextJS", "Tailwind Css", "Firebase", "Github Actions"],
+        languages: ["NextJS", "TailwindCSS", "Firebase", "Github Actions"],
         active: true,
         source: "https://github.com/Vrock691/Portfolio",
         website: null,

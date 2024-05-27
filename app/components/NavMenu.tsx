@@ -30,7 +30,7 @@ export function NavMenuElement({
     let selected = pathname.endsWith(path.toString());
     return (
         <Link key={`${name}`} href={path}>
-            <div className="flex w-full items-center justify-between gap-2 rounded border border-neutral-200 px-4 py-4 dark:border-neutral-700 md:border-none md:p-0 my-2">
+            <div className="flex w-full items-center justify-between gap-2 rounded border border-[--text-color] px-4 py-4 dark:border-neutral-700 md:border-none md:p-0 my-2">
                 <Image
                 src={icon}
                 alt=""
