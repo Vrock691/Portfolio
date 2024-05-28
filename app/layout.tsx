@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
 import Logo from "./components/logo";
@@ -30,7 +31,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
       </body>
     </html>
   );
