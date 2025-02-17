@@ -1,13 +1,12 @@
-'use client'
+'use server'
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { projects } from '../lib/projects';
 import ProjectCard from './components/projectCard';
-import Card from '../components/card';
+import { get } from '@vercel/edge-config';
 
-export default function Projects() {
-  const [filter, setFilter] = useState('');
+export default async function Projects() {
+
+  const projects = await get('projects') as Array<any>;
 
   return (
     <div>
@@ -18,9 +17,9 @@ export default function Projects() {
       <h1 className='text-xl'>Projets</h1>
       <p>Voici une liste de mes derniers projets personnels.</p>
       {
-        projects.map((IprojectData) =>
+        (projects) ? projects.map((IprojectData) =>
           <ProjectCard projectData={IprojectData}></ProjectCard>
-        )
+        ) : null
       }
     </div>
   );
