@@ -23,6 +23,14 @@ export default function JobUni() {
             </div>
             <ul>
                 <li className="flex gap-4 mb-3">
+                    <p className="text-sm italic">2025<br />2027</p>
+                    <div>
+                        <p className="font-bold">Master Informatique</p>
+                        <p>Parcours Ingénieurie du développement logiciel</p>
+                        <p className="text-sm font-light">Aix Marseille Université</p>
+                    </div>
+                </li>
+                <li className="flex gap-4 mb-3">
                     <p className="text-sm italic">2022<br />2025</p>
                     <div>
                         <p className="font-bold">Licence Informatique</p>
@@ -52,14 +60,6 @@ export default function JobUni() {
             </div>
             <ul>
                 <li className="flex gap-4 mb-3">
-                    <p className="text-sm italic">2024</p>
-                    <div>
-                        <p className="font-bold">Certification C#</p>
-                        <p>En cours de formation</p>
-                        <p className="text-sm font-light">Microsoft Learn</p>
-                    </div>
-                </li>
-                <li className="flex gap-4 mb-3">
                     <p className="text-sm italic">2023</p>
                     <div>
                         <p className="font-bold">PIX</p>
@@ -85,15 +85,60 @@ export default function JobUni() {
                     width={16}
                     height={16}
                 />
+                <h2 className="text-lg">Stages et missions freelance</h2>
+            </div>
+            <ul>
+                <li className="flex gap-4 mb-3">
+                    <p className="text-sm italic">2025</p>
+                    <div>
+                        <p className="font-bold">Développeur web et webmaster</p>
+                        <p>Amélioration du site internet, développement d'un mini dashboard avec Go.</p>
+                        <p className="text-sm font-light">Hébé-échange - Lyon</p>
+                    </div>
+                </li>
+                <li className="flex gap-4 mb-3">
+                    <p className="text-sm italic">2024</p>
+                    <div>
+                        <p className="font-bold">Développeur fullstack freelance</p>
+                        <p>Création et mise en ligne du site TwinsRental.</p>
+                        <p className="text-sm font-light">En distanciel - Lyon</p>
+                    </div>
+                </li>
+                <li className="flex gap-4  mb-3">
+                    <p className="text-sm italic">2024</p>
+                    <div>
+                        <p className="font-bold">Développeur Flutter freelance</p>
+                        <p>Développement d'une maquette en flutter avec une mini API (expressJS) pour communiquer avec Gemini.</p>
+                        <p className="text-sm font-light">En distanciel - Lyon</p>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <div className="flex gap-2 items-center mb-1">
+                <Image
+                    src="/briefcase.svg"
+                    alt=""
+                    className="dark:invert"
+                    width={16}
+                    height={16}
+                />
                 <h2 className="text-lg">Emplois</h2>
             </div>
             <ul>
                 <li className="flex gap-4 mb-3">
-                    <p className="text-sm italic">2022<br />auj.</p>
+                    <p className="text-sm italic">2025</p>
+                    <div>
+                        <p className="font-bold">Postier</p>
+                        <p>Facteur pour le groupe LaPoste</p>
+                        <p className="text-sm font-light">Genay (Rhône)</p>
+                    </div>
+                </li>
+                <li className="flex gap-4 mb-3">
+                    <p className="text-sm italic">2022<br />2024</p>
                     <div>
                         <p className="font-bold">Employé Polyvalent</p>
                         <p>Entretient des locaux et espaces verts - Réception - Garde d'enfants</p>
-                        <p className="text-sm font-light">Manoir de la garde - Jarnioux</p>
+                        <p className="text-sm font-light">Manoir de la garde - Jarnioux (Rhône)</p>
                     </div>
                 </li>
                 <li className="flex gap-4  mb-3">
@@ -101,7 +146,7 @@ export default function JobUni() {
                     <div>
                         <p className="font-bold">Gestionnaire Locatif Junior</p>
                         <p>Service Clientèle Locative - Support téléphonique et email - Dialogues entre les bailleurs, locataires et prestataires.</p>
-                        <p className="text-sm font-light">Century 21 Coquillat Immobilier - Villefranche-sur-saône</p>
+                        <p className="text-sm font-light">Century 21 Coquillat Immobilier - Villefranche-sur-saône (Rhône)</p>
                     </div>
                 </li>
             </ul>
