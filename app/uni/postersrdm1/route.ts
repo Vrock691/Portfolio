@@ -1,7 +1,7 @@
 import { get } from "@vercel/edge-config";
 
 export async function GET() {
-    const LINK: string = await get("postersrdlink") ?? null
+    const LINK: string | null = await get("postersrdlink") ?? null
 
     if (!LINK) {
         return new Response("Blob storage URL not configured. Set VERCEL_BLOB_URL.", { status: 500 });
